@@ -37,18 +37,20 @@ export default class Header extends Component {
 
 const styles = StyleSheet.create({
   header: {
-    height: 120,
+    height: '20%',
     paddingTop: 10,
     shadowColor: '#000000',
     shadowOffset: { width: 0, height: 2},
     shadowOpacity: 0.3,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#dcdfe3',
+    backgroundColor: '#E3797C',
+    marginBottom:'2%'
   },
   headerText: {
     fontSize: 20,
     textAlign: 'center',
     paddingTop:3,
+    color:'white'
   }
 });

@@ -53,7 +53,7 @@ class Converter extends Component{
     let { input, tl, usd, gbp, cad, jpy, eur, rates, usd1, gbp1, cad1, jpy1, eur1 } = this.state;
     return (
       <View stye={converterWrapper}>
-        <TextInput placeholder="TRY"
+        <TextInput placeholder="Enter TRY Amount"
         style={inputStyle}
         keyboardType="numeric"
         onChangeText={(text) =>{
@@ -107,16 +107,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   inputStyle: {
+    alignItems: 'center',
     width:'100%',
-    height:'15%',
-    paddingBottom: 25,
+    height:'10%',
     borderColor: 'gray',
     borderWidth: 1,
     fontSize:20,
     textAlign:'center',
+    marginBottom:'2%'
   },
   textStyle: {
-    paddingTop:'5%',
+    paddingTop:'8%',
     width: '50%',
     height:90,
     fontWeight: 'bold',
@@ -124,6 +125,8 @@ const styles = StyleSheet.create({
     borderColor: 'gray',
     borderWidth: 1,
     textAlign:'center',
+    color:'white',
+    backgroundColor:'#E3797C'
   },
   textRow: {
     flexDirection: "row",
